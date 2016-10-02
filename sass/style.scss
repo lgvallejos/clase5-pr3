@@ -1,0 +1,258 @@
+@import "reset";
+@import "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans";
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+
+$primary-color-dark:   #7B1FA2;
+$primary-color:        #9C27B0;
+$primary-color-light:  #E1BEE7;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #00BCD4;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+$color-1: #8853a9;
+$font-family1:Montserrat;
+
+
+
+body {
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dab4b0+0,cfa19b+40,be867e+100 */
+background: rgb(218,180,176); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(218,180,176,1) 0%, rgba(207,161,155,1) 40%, rgba(190,134,126,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(218,180,176,1) 0%,rgba(207,161,155,1) 40%,rgba(190,134,126,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(218,180,176,1) 0%,rgba(207,161,155,1) 40%,rgba(190,134,126,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dab4b0', endColorstr='#be867e',GradientType=0 ); /* IE6-9 */
+
+
+}
+
+
+.seccion1 {
+
+	margin-top: 100px;
+	
+}
+
+.contenido {
+	margin-top: -3px;
+	margin-bottom: 100px;
+}
+
+
+.contenedor {
+
+	max-width: 1000px;
+	margin:auto;
+	position:relative;
+
+
+}
+
+
+
+
+	.imggrande {
+
+		max-width: 1000px;
+		width: auto;
+		height: auto;
+	}
+
+
+.macarons, .desc {
+	display: inline-block;
+	position: absolute;
+}
+
+.macarons {
+
+	color:white;
+	font-size: 22px;
+	font-family: "open sans";
+	text-transform: uppercase;
+	background: rgba(136,83,169,0.8);
+	top:0;
+	margin-top: 40px;
+    margin-left: -40px;
+	padding-left: 10px;
+
+	.ion-coffee {
+
+		font-size: 30px;
+	}
+
+	div {
+
+		display: inline-block;
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	    padding-left: 10px;
+	    padding-right: 30px;
+	    width: 200px;
+	    text-align: right;
+	}
+}
+
+.desc {
+	text-align: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color:white;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background: rgba(37,192,205,0.8);
+	bottom: 0;
+    right: 0;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+
+.contenedor2 {
+
+	@extend .contenedor;
+	height: 200px;
+	.calendario {
+
+		/*display:inline-block;*/
+		float: left;
+		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		flex-direction: column;
+		text-align: center;
+		background: $color-1;
+		color:white;
+		font-family:$font-family1;
+		font-size: 25px;
+		width: 200px;
+		height:200px;
+
+
+
+		.ion-calendar {
+
+			font-size:50px;
+		}
+
+		p {
+			margin-top:12px;
+			text-transform: uppercase;
+		}
+	}
+
+	.details {
+
+		display: inline-block;
+		width:600px;
+		height: 200px;
+		background: white;
+		font-size: 22px;
+		font-family: $font-family1;
+
+		.contenedor3 {
+
+			border-right: solid black 1px;
+		}
+
+		.ingredientes {
+			margin-left:20px;
+			margin-top:30px;
+			display: flex;
+  			flex-direction: row;
+  			flex-wrap: nowrap;
+			line-height: 1.2;
+			height: auto;
+
+
+			.det-ingredientes {
+
+				/*display:inline-block;*/
+				margin-left:5px;
+			}
+
+		}
+
+		.consumers {
+			margin-left:20px;
+			margin-top:35px;
+			display: flex;
+  			flex-direction: row;
+  			flex-wrap: nowrap;
+  			align-items: center;
+
+  			.icon-consumers {
+  				margin-left: 10px;
+  				width: 50px;
+  				height: 50px;
+  				border-radius: 50%;
+  				overflow: hidden;
+  				img {
+
+  					width: 50px;
+  					height: auto;
+  				}
+  			}
+
+  			.consumers-more {
+  				margin-left:10px;
+  			}
+
+
+
+		}
+
+	}
+
+	.puntaje {
+
+		display: inline-block;
+		text-align: center;
+		background: white;
+		width: 200px;
+		height: 200px;
+		float:right;
+
+
+		.numero {
+
+			margin-top:30px;
+			margin-bottom:35px;
+			color:black;
+			font-size: 35px;
+    		font-family: "open sans";
+
+		}
+
+		.ion-star {
+			color: #25c0cd;
+			font-size:30px;
+		}
+
+		.numero2 {
+
+			font-size:20px;
+			font-family: $font-family1;
+			margin-top:10px;
+		}
+
+	}
+
+	
+
+	
+}
+
+
+
+
+
+
+
+
+

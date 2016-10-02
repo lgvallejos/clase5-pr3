@@ -1,0 +1,201 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import "https://fonts.googleapis.com/css?family=Montserrat|Open+Sans";
+@import "http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#dab4b0+0,cfa19b+40,be867e+100 */
+  background: #dab4b0;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #dab4b0 0%, #cfa19b 40%, #be867e 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #dab4b0 0%, #cfa19b 40%, #be867e 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #dab4b0 0%, #cfa19b 40%, #be867e 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dab4b0', endColorstr='#be867e',GradientType=0 );
+  /* IE6-9 */ }
+
+.seccion1 {
+  margin-top: 100px; }
+
+.contenido {
+  margin-top: -3px;
+  margin-bottom: 100px; }
+
+.contenedor, .contenedor2 {
+  max-width: 1000px;
+  margin: auto;
+  position: relative; }
+
+.imggrande {
+  max-width: 1000px;
+  width: auto;
+  height: auto; }
+
+.macarons, .desc {
+  display: inline-block;
+  position: absolute; }
+
+.macarons {
+  color: white;
+  font-size: 22px;
+  font-family: "open sans";
+  text-transform: uppercase;
+  background: rgba(136, 83, 169, 0.8);
+  top: 0;
+  margin-top: 40px;
+  margin-left: -40px;
+  padding-left: 10px; }
+  .macarons .ion-coffee {
+    font-size: 30px; }
+  .macarons div {
+    display: inline-block;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 30px;
+    width: 200px;
+    text-align: right; }
+
+.desc {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(37, 192, 205, 0.8);
+  bottom: 0;
+  right: 0;
+  margin-right: 30px;
+  margin-bottom: 30px; }
+
+.contenedor2 {
+  height: 200px; }
+  .contenedor2 .calendario {
+    /*display:inline-block;*/
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: #8853a9;
+    color: white;
+    font-family: Montserrat;
+    font-size: 25px;
+    width: 200px;
+    height: 200px; }
+    .contenedor2 .calendario .ion-calendar {
+      font-size: 50px; }
+    .contenedor2 .calendario p {
+      margin-top: 12px;
+      text-transform: uppercase; }
+  .contenedor2 .details {
+    display: inline-block;
+    width: 600px;
+    height: 200px;
+    background: white;
+    font-size: 22px;
+    font-family: Montserrat; }
+    .contenedor2 .details .contenedor3 {
+      border-right: solid black 1px; }
+    .contenedor2 .details .ingredientes {
+      margin-left: 20px;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      line-height: 1.2;
+      height: auto; }
+      .contenedor2 .details .ingredientes .det-ingredientes {
+        /*display:inline-block;*/
+        margin-left: 5px; }
+    .contenedor2 .details .consumers {
+      margin-left: 20px;
+      margin-top: 35px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center; }
+      .contenedor2 .details .consumers .icon-consumers {
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        overflow: hidden; }
+        .contenedor2 .details .consumers .icon-consumers img {
+          width: 50px;
+          height: auto; }
+      .contenedor2 .details .consumers .consumers-more {
+        margin-left: 10px; }
+  .contenedor2 .puntaje {
+    display: inline-block;
+    text-align: center;
+    background: white;
+    width: 200px;
+    height: 200px;
+    float: right; }
+    .contenedor2 .puntaje .numero {
+      margin-top: 30px;
+      margin-bottom: 35px;
+      color: black;
+      font-size: 35px;
+      font-family: "open sans"; }
+    .contenedor2 .puntaje .ion-star {
+      color: #25c0cd;
+      font-size: 30px; }
+    .contenedor2 .puntaje .numero2 {
+      font-size: 20px;
+      font-family: Montserrat;
+      margin-top: 10px; }
+
+/*# sourceMappingURL=style.css.map */
